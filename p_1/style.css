@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1685039643047-d86cd7cd76d9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#overlay {
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.348);
+}
+
+#overlay img {
+  position: absolute;
+  width: 40%;
+  bottom: -10%;
+  right: 20%;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+}
+
+.a {
+  display: flex;
+  align-items: center;
+}
+
+.a i {
+  font-size: 1.5vw;
+  color: #714400;
+  cursor: pointer;
+}
+
+.a h3 {
+  font-size: 1vw;
+  font-weight: 500;
+  color: white;
+}
+
+.a h1 {
+  font-size: 2vw;
+  color: white;
+}
+
+.a h1 span {
+  background-color: white;
+  color: #523f2f;
+  padding: 0 0.4vw;
+  border-radius: 6px;
+}
+
+.a:nth-child(1) {
+  gap: 1vw;
+}
+
+.a:nth-child(3) {
+  width: 15%;
+  justify-content: space-between;
+}
+
+.text {
+  margin-top: 25vh;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  /* background-color: red; */
+  text-align: center;
+  color: white;
+}
+
+.text p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 1vw;
+  opacity: 0.7;
+}
+
+.text h1 {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  font-size: 8vw;
+  font-weight: 700;
+  letter-spacing: 1vw;
+}
+
+footer {
+  padding: 0vh 2vw;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  padding-bottom: 3vh;
+  /* background-color: red; */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  color: white;
+}
+
+.cntnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6vh;
+  justify-content: center;
+  /* background-color: red; */
+  color: white;
+}
+
+.cntnt p {
+  width: 73%;
+  text-align: center;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+.cntnt button {
+  background-color: transparent;
+  font-size: 1vw;
+  color: white;
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
